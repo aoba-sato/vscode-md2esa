@@ -2,7 +2,7 @@
   "name": "md2esa",
   "displayName": "md2esa",
   "description": "Markdown の $$ 数式を esa 用の ```math に変換してクリップボードにコピーします（元ファイルは書き換えません）",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "aoba-sato",
   "license": "MIT",
   "repository": {

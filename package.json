@@ -1,8 +1,8 @@
 {
   "name": "md2esa",
-  "displayName": "Markdown to esa",
+  "displayName": "md2esa",
   "description": "Markdown の $$ 数式を esa 用の ```math に変換してクリップボードにコピーします（元ファイルは書き換えません）",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "aoba-sato",
   "engines": {
     "vscode": "^1.75.0"
@@ -60,6 +60,6 @@
   },
   "scripts": {
     "test": "node --test test/*.test.js",
-    "package": "npx --yes @vscode/vsce package --allow-missing-repository"
+    "package": "npx --yes @vscode/vsce package --allow-missing-repository --skip-license"
   }
 }

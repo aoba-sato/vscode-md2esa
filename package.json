@@ -1,0 +1,65 @@
+{
+  "name": "md2esa",
+  "displayName": "Markdown to esa",
+  "description": "Markdown の $$ 数式を esa 用の ```math に変換してクリップボードにコピーします（元ファイルは書き換えません）",
+  "version": "0.1.0",
+  "publisher": "aoba-sato",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "markdown",
+    "esa",
+    "math",
+    "katex"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "md2esa.copyForEsa",
+        "title": "esa用にコピー",
+        "category": "md2esa",
+        "icon": "$(copy)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "md2esa.copyForEsa",
+          "when": "editorLangId == markdown",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "md2esa.copyForEsa",
+          "when": "editorLangId == markdown",
+          "group": "9_cutcopypaste"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "md2esa.copyForEsa",
+          "when": "editorLangId == markdown"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "md2esa.copyForEsa",
+        "key": "ctrl+alt+e",
+        "mac": "cmd+alt+e",
+        "when": "editorTextFocus && editorLangId == markdown"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "npx --yes @vscode/vsce package --allow-missing-repository"
+  }
+}

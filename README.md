@@ -2,10 +2,11 @@
 
 [![最新リリース](https://img.shields.io/github/v/release/aoba-sato/vscode-md2esa?label=release)](https://github.com/aoba-sato/vscode-md2esa/releases/latest)
 
-VSCode で書いた Markdown の数式ブロック `$$ … $$` を、esa の数式ブロック ` ```math ` に変換してクリップボードにコピーする VSCode 拡張機能です。
+VSCode で書いた Markdown の数式ブロック `$$ … $$` を、情報共有ツールesaの数式ブロック ` ```math ` に変換してクリップボードにコピーする VSCode 拡張機能です。全ての処理はローカルで行われ、外部と通信しません。
 
 - 元のファイルは書き換えず、 `$$`のまま保持します 
 - [使い方](#使い方)でクリップボードに変換版がコピーされます
+- 変換結果をesaの編集画面に貼り付けると、数式ブロックが正しく反映されます
 
 ## インストール
 
